@@ -1,0 +1,49 @@
+// ==========================================================================
+// VARIABLES — Identidad "Pastas del Lago"
+// Paleta inspirada en Los Antiguos: trigo, cereza y el Lago Buenos Aires
+// ==========================================================================
+
+// Colores
+$color-harina: #F3E9D2;   // fondo cálido, color harina
+$color-crema: #FFFBF2;    // blanco cálido para tarjetas
+$color-cereza: #8B1E3F;   // rojo cereza — color primario / marca
+$color-cereza-clara: #C4485F;
+$color-lago: #2C5F6F;     // azul lago — secundario
+$color-lago-claro: #3E7A8C;
+$color-trigo: #C9962C;    // dorado trigo — acento
+$color-verde-monte: #4A7C59; // verde ciprés patagónico
+$color-grafito: #2B2420;  // texto principal
+$color-grafito-suave: #55483E;
+$color-borde: rgba(43, 36, 32, 0.12);
+
+// Tipografía
+$font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+$font-body: 'Work Sans', 'Segoe UI', sans-serif;
+$font-utility: 'Work Sans', sans-serif;
+
+$fs-base: 1rem;
+
+// Espaciado (escala base 8px)
+$space-1: 0.5rem;
+$space-2: 1rem;
+$space-3: 1.5rem;
+$space-4: 2.5rem;
+$space-5: 4rem;
+$space-6: 6rem;
+
+// Radios y sombras
+$radius-sm: 6px;
+$radius-md: 14px;
+$radius-pill: 999px;
+$shadow-suave: 0 10px 30px -12px rgba(43, 36, 32, 0.25);
+$shadow-fuerte: 0 18px 45px -14px rgba(43, 36, 32, 0.35);
+
+// Breakpoints (coinciden con Bootstrap para consistencia)
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+// Transiciones
+$ease-suave: cubic-bezier(0.22, 1, 0.36, 1);
+$dur-normal: 0.35s;

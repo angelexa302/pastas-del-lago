@@ -1,0 +1,50 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.form-pastas {
+  .form-label {
+    font-family: v.$font-utility;
+    font-weight: 600;
+    color: v.$color-grafito;
+    margin-bottom: 0.35rem;
+  }
+
+  .form-control,
+  .form-select {
+    background-color: v.$color-crema;
+    border: 1.5px solid v.$color-borde;
+    border-radius: v.$radius-sm;
+    padding: 0.75rem 1rem;
+    color: v.$color-grafito;
+    transition: border-color v.$dur-normal v.$ease-suave, box-shadow v.$dur-normal v.$ease-suave;
+
+    &:focus {
+      border-color: v.$color-cereza;
+      box-shadow: 0 0 0 4px rgba(139, 30, 63, 0.12);
+    }
+  }
+
+  textarea.form-control {
+    min-height: 140px;
+    resize: vertical;
+  }
+
+  .form-check-input:checked {
+    background-color: v.$color-cereza;
+    border-color: v.$color-cereza;
+  }
+}
+
+.info-contacto {
+  li {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: v.$space-2;
+    align-items: flex-start;
+  }
+
+  .info-contacto__icono {
+    width: 26px;
+    flex-shrink: 0;
+  }
+}

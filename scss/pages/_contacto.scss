@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.contacto__grid {
+  display: grid;
+  gap: v.$space-4;
+
+  @include m.respond(lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.horarios-tabla {
+  width: 100%;
+  border-collapse: collapse;
+
+  td, th {
+    padding: 0.55rem 0;
+    border-bottom: 1px solid v.$color-borde;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+
+  th {
+    color: v.$color-grafito-suave;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="#FFFBF2"/><path d="M170 60 L230 60 L225 100 L235 105 L235 260 Q235 280 200 280 Q165 280 165 260 L165 105 L175 100 Z" fill="#F3E9D2" stroke="#8B1E3F" stroke-width="3"/><path d="M172 130 L228 130 L228 258 Q228 270 200 270 Q172 270 172 258 Z" fill="#8B1E3F"/>
+<circle cx="185" cy="150" r="4" fill="#C4485F"/><circle cx="210" cy="165" r="4" fill="#C4485F"/><circle cx="195" cy="190" r="4" fill="#C4485F"/>
+<rect x="176" y="95" width="48" height="14" rx="3" fill="#4A7C59"/>
+<text x="200" y="220" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#F3E9D2" font-weight="700">CEREZA</text>
+</svg>

@@ -1,0 +1,101 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.navbar-pastas {
+  background-color: v.$color-harina;
+  padding-block: v.$space-2;
+  border-bottom: 1px solid v.$color-borde;
+  transition: box-shadow v.$dur-normal v.$ease-suave;
+
+  &.is-scrolled {
+    box-shadow: v.$shadow-suave;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: v.$font-display;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: v.$color-grafito;
+
+    img {
+      width: 42px;
+      height: 42px;
+    }
+
+    span {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+
+      small {
+        font-family: v.$font-utility;
+        font-size: 0.62rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: v.$color-cereza;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border: 2px solid v.$color-cereza;
+    border-radius: v.$radius-sm;
+    padding: 0.35rem 0.55rem;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%238B1E3F' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+
+  .nav-link {
+    font-family: v.$font-utility;
+    font-weight: 600;
+    color: v.$color-grafito !important;
+    padding: 0.5rem 1rem !important;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 0.2rem;
+      height: 2px;
+      background: v.$color-cereza;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform v.$dur-normal v.$ease-suave;
+    }
+
+    &:hover::after,
+    &.active::after {
+      transform: scaleX(1);
+    }
+
+    &.active {
+      color: v.$color-cereza !important;
+    }
+  }
+
+  .btn-nav-cta {
+    @include m.boton(v.$color-cereza, v.$color-crema, v.$color-cereza-clara);
+    font-size: 0.9rem;
+    padding: 0.6rem 1.4rem;
+    margin-left: v.$space-1;
+  }
+
+  @include m.respond(lg) {
+    .nav-link::after {
+      left: 0.4rem;
+      right: 0.4rem;
+    }
+  }
+}

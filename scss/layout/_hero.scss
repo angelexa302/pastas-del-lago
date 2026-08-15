@@ -1,0 +1,111 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.hero {
+  position: relative;
+  padding-block: v.$space-5 v.$space-4;
+  overflow: hidden;
+
+  &__grid {
+    @include m.contenedor();
+    display: grid;
+    gap: v.$space-4;
+    align-items: center;
+  }
+
+  &__texto {
+    animation: hero-entrada 0.9s v.$ease-suave both;
+  }
+
+  &__acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: v.$space-2;
+    margin-top: v.$space-3;
+  }
+
+  &__img {
+    position: relative;
+    border-radius: v.$radius-md;
+    overflow: hidden;
+    box-shadow: v.$shadow-fuerte;
+    animation: hero-entrada 1.1s v.$ease-suave both;
+    animation-delay: 0.15s;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__sello-flotante {
+    position: absolute;
+    bottom: -18px;
+    left: -18px;
+    z-index: 2;
+  }
+
+  &__stats {
+    @include m.contenedor();
+    display: grid;
+    gap: v.$space-3;
+    margin-top: v.$space-5;
+    text-align: center;
+
+    strong {
+      display: block;
+      font-family: v.$font-display;
+      font-size: 2.1rem;
+      color: v.$color-cereza;
+    }
+
+    span {
+      font-size: 0.85rem;
+      color: v.$color-grafito-suave;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+  }
+
+  @include m.respond(md) {
+    &__grid {
+      grid-template-columns: 1.1fr 0.9fr;
+    }
+
+    &__stats {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@keyframes hero-entrada {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Encabezado interno de páginas secundarias (nosotros, productos, etc.)
+.page-header {
+  background: linear-gradient(160deg, v.$color-cereza, #6d1731);
+  color: v.$color-crema;
+  padding-block: v.$space-5 v.$space-4;
+  text-align: center;
+
+  h1 { color: v.$color-crema; }
+
+  p {
+    color: rgba(255,255,255,0.85);
+    max-width: 640px;
+    margin-inline: auto;
+  }
+
+  .eyebrow {
+    color: v.$color-trigo;
+  }
+}

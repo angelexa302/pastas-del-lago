@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as v;
+
+// Aparición suave para elementos que no usan AOS (uso nativo de keyframes)
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animar-aparecer {
+  animation: aparecer 0.7s v.$ease-suave both;
+}
+
+// Ondulación decorativa del "lago" usada como separador (keyframes)
+@keyframes ondear {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-14px); }
+}
+
+.ondas-lago {
+  animation: ondear 6s ease-in-out infinite;
+}
+
+// Transición nativa genérica para íconos interactivos
+.icono-interactivo {
+  transition: transform v.$dur-normal v.$ease-suave;
+
+  &:hover {
+    transform: scale(1.12) rotate(-4deg);
+  }
+}
+
+// Subrayado animado para links de texto dentro del contenido
+.link-subrayado {
+  background-image: linear-gradient(v.$color-cereza, v.$color-cereza);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size v.$dur-normal v.$ease-suave;
+  padding-bottom: 2px;
+
+  &:hover {
+    background-size: 100% 2px;
+  }
+}

@@ -1,0 +1,83 @@
+@use 'variables' as v;
+
+// Media queries reutilizables (mobile-first)
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: v.$bp-sm) { @content; }
+  } @else if $breakpoint == md {
+    @media (min-width: v.$bp-md) { @content; }
+  } @else if $breakpoint == lg {
+    @media (min-width: v.$bp-lg) { @content; }
+  } @else if $breakpoint == xl {
+    @media (min-width: v.$bp-xl) { @content; }
+  }
+}
+
+// Botón con parámetros: color de fondo, color de texto y color en hover
+@mixin boton($bg, $color: v.$color-crema, $bg-hover: darken($bg, 10%)) {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.9rem;
+  border-radius: v.$radius-pill;
+  background-color: $bg;
+  color: $color;
+  font-family: v.$font-utility;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color v.$dur-normal v.$ease-suave,
+              transform v.$dur-normal v.$ease-suave,
+              box-shadow v.$dur-normal v.$ease-suave;
+
+  &:hover, &:focus-visible {
+    background-color: $bg-hover;
+    color: $color;
+    transform: translateY(-3px);
+    box-shadow: v.$shadow-suave;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+}
+
+// Tarjeta elevada reutilizable, con radio y sombra parametrizables
+@mixin tarjeta($radius: v.$radius-md, $padding: v.$space-3) {
+  background: v.$color-crema;
+  border-radius: $radius;
+  padding: $padding;
+  box-shadow: v.$shadow-suave;
+  transition: transform v.$dur-normal v.$ease-suave, box-shadow v.$dur-normal v.$ease-suave;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: v.$shadow-fuerte;
+  }
+}
+
+// Truncar texto a n líneas
+@mixin recorte-lineas($lineas: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lineas;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// Contenedor centrado con ancho máximo, parametrizable
+@mixin contenedor($max: 1180px, $padding: v.$space-2) {
+  width: 100%;
+  max-width: $max;
+  margin-inline: auto;
+  padding-inline: $padding;
+}
+
+// Título de sección con eyebrow (etiqueta pequeña arriba)
+@mixin titulo-seccion {
+  font-family: v.$font-display;
+  font-weight: 600;
+  color: v.$color-grafito;
+  line-height: 1.15;
+}

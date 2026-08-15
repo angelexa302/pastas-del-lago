@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.historia__grid {
+  display: grid;
+  gap: v.$space-4;
+  align-items: center;
+
+  @include m.respond(md) {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+.linea-tiempo {
+  border-left: 3px solid v.$color-trigo;
+  margin-left: 0.6rem;
+
+  &__item {
+    position: relative;
+    padding: 0 0 v.$space-4 v.$space-3;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -9px;
+      top: 4px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: v.$color-cereza;
+      border: 3px solid v.$color-harina;
+    }
+  }
+
+  &__anio {
+    font-family: v.$font-display;
+    color: v.$color-cereza;
+    font-weight: 700;
+  }
+}

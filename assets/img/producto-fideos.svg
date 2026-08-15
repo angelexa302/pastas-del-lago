@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="#FFFBF2"/><rect x="140" y="55" width="120" height="200" rx="8" fill="#F3E9D2" stroke="#C9962C" stroke-width="3"/>
+<g stroke="#E9C468" stroke-width="3">
+<line x1="155" y1="80" x2="155" y2="230"/><line x1="167" y1="80" x2="167" y2="230"/><line x1="179" y1="80" x2="179" y2="230"/><line x1="191" y1="80" x2="191" y2="230"/><line x1="203" y1="80" x2="203" y2="230"/><line x1="215" y1="80" x2="215" y2="230"/><line x1="227" y1="80" x2="227" y2="230"/><line x1="245" y1="80" x2="245" y2="230"/>
+</g>
+<rect x="140" y="55" width="120" height="34" fill="#8B1E3F"/>
+<text x="200" y="77" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#F3E9D2" font-weight="700">DEL LAGO</text>
+</svg>

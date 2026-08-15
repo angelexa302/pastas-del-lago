@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.masonry-galeria {
+  columns: 1;
+  gap: v.$space-2;
+
+  @include m.respond(sm) { columns: 2; }
+  @include m.respond(lg) { columns: 3; }
+
+  figure {
+    break-inside: avoid;
+    margin: 0 0 v.$space-2;
+    border-radius: v.$radius-md;
+    overflow: hidden;
+    box-shadow: v.$shadow-suave;
+    position: relative;
+
+    img {
+      width: 100%;
+      transition: transform v.$dur-normal v.$ease-suave, filter v.$dur-normal v.$ease-suave;
+    }
+
+    figcaption {
+      position: absolute;
+      inset: auto 0 0 0;
+      background: linear-gradient(0deg, rgba(43,36,32,0.82), transparent);
+      color: v.$color-crema;
+      padding: v.$space-2;
+      font-size: 0.9rem;
+      font-family: v.$font-utility;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity v.$dur-normal v.$ease-suave, transform v.$dur-normal v.$ease-suave;
+    }
+
+    &:hover img {
+      transform: scale(1.08);
+    }
+
+    &:hover figcaption {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

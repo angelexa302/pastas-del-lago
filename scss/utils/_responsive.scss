@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+// Evita cualquier desborde horizontal en toda la app
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.solo-mobile {
+  @include m.respond(md) {
+    display: none !important;
+  }
+}
+
+.solo-desktop {
+  display: none !important;
+
+  @include m.respond(md) {
+    display: block !important;
+  }
+}
+
+.texto-centrado-mobile {
+  text-align: center;
+
+  @include m.respond(md) {
+    text-align: left;
+  }
+}
+
+// Ajustes finos de tipografía para pantallas muy chicas
+@media (max-width: 360px) {
+  .hero__acciones {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

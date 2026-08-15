@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.destacados__cta {
+  text-align: center;
+  margin-top: v.$space-4;
+}
+
+.cinta-cereza {
+  background: v.$color-trigo;
+  color: v.$color-grafito;
+  padding-block: v.$space-2;
+  overflow: hidden;
+  white-space: nowrap;
+
+  &__track {
+    display: inline-flex;
+    gap: 3rem;
+    animation: deslizar 22s linear infinite;
+    font-family: v.$font-utility;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+  }
+}
+
+@keyframes deslizar {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastas del Lago | Fábrica de pastas artesanales en Los Antiguos, Santa Cruz</title>
+  <meta name="description" content="Pastas del Lago es una fábrica artesanal de pastas frescas en Los Antiguos, Santa Cruz. Ravioles de cereza, sorrentinos de cordero, ñoquis y tallarines hechos a mano a orillas del Lago Buenos Aires.">
+  <meta name="keywords" content="pastas artesanales, fábrica de pastas, Los Antiguos, Santa Cruz, Patagonia, ravioles de cereza, sorrentinos, ñoquis, pastas frescas">
+  <meta name="author" content="Pastas del Lago">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS (animaciones al hacer scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Estilos propios (compilados desde SCSS) -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-pastas sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo-sello.svg" alt="Sello del logo de Pastas del Lago">
+          <span>Pastas del Lago <small>Los Antiguos · Sta. Cruz</small></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="btn-nav-cta" href="pages/contacto.html">Hacer un pedido</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-label="Presentación">
+      <div class="hero__grid">
+        <div class="hero__texto">
+          <p class="eyebrow">Fábrica artesanal desde 2011</p>
+          <h1>Pastas amasadas a mano, a orillas del Lago Buenos Aires</h1>
+          <p class="lead">En Los Antiguos combinamos la receta italiana de la familia con la cereza patagónica: el resultado son pastas frescas que no vas a encontrar en ningún otro lado de la Patagonia.</p>
+          <div class="hero__acciones">
+            <a href="pages/productos.html" class="btn-primario">Ver productos</a>
+            <a href="pages/nosotros.html" class="btn-secundario">Conocé nuestra historia</a>
+          </div>
+        </div>
+        <div class="hero__img" data-aos="fade-left" data-aos-duration="900">
+          <img src="assets/img/hero-cordillera.svg" alt="Ilustración del Lago Buenos Aires y la cordillera al atardecer, con pastas artesanales en primer plano" width="900" height="600">
+        </div>
+      </div>
+
+      <div class="hero__stats animar-aparecer">
+        <div>
+          <strong>13</strong>
+          <span>Años amasando</span>
+        </div>
+        <div>
+          <strong>+40</strong>
+          <span>Variedades de pastas y salsas</span>
+        </div>
+        <div>
+          <strong>100%</strong>
+          <span>Trigo e ingredientes patagónicos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cinta animada -->
+    <div class="cinta-cereza" aria-hidden="true">
+      <div class="cinta-cereza__track">
+        <span>Hecho a mano</span><span>·</span><span>Cereza de Los Antiguos</span><span>·</span><span>Trigo patagónico</span><span>·</span><span>Sin conservantes</span><span>·</span>
+        <span>Hecho a mano</span><span>·</span><span>Cereza de Los Antiguos</span><span>·</span><span>Trigo patagónico</span><span>·</span><span>Sin conservantes</span><span>·</span>
+      </div>
+    </div>
+
+    <!-- ===================== NUESTRO PROCESO ===================== -->
+    <section class="seccion" aria-labelledby="titulo-proceso">
+      <div class="seccion__contenedor">
+        <div class="seccion__cabecera seccion__cabecera--centrada">
+          <p class="eyebrow">De la chacra a tu mesa</p>
+          <h2 id="titulo-proceso">Así hacemos nuestras pastas</h2>
+        </div>
+        <div class="proceso">
+          <article class="proceso__item" data-aos="fade-up">
+            <img src="assets/icons/icon-trigo.svg" alt="" class="proceso__icono" aria-hidden="true">
+            <div>
+              <h3>Harina seleccionada</h3>
+              <p>Trabajamos con trigo de productores patagónicos, molido fino para lograr una masa elástica y pareja.</p>
+            </div>
+          </article>
+          <article class="proceso__item" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/icons/icon-amasado.svg" alt="" class="proceso__icono" aria-hidden="true">
+            <div>
+              <h3>Amasado a mano</h3>
+              <p>Cada bollo se amasa y estira de forma artesanal, en tandas chicas, todos los días de la semana.</p>
+            </div>
+          </article>
+          <article class="proceso__item" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/icons/icon-cereza.svg" alt="" class="proceso__icono" aria-hidden="true">
+            <div>
+              <h3>Relleno con cereza local</h3>
+              <p>En temporada, usamos la cereza de las chacras de Los Antiguos para nuestros rellenos y salsas de autor.</p>
+            </div>
+          </article>
+          <article class="proceso__item" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/icons/icon-lago.svg" alt="" class="proceso__icono" aria-hidden="true">
+            <div>
+              <h3>Entrega en el día</h3>
+              <p>Retirá en fábrica o pedí envío el mismo día en Los Antiguos y alrededores del Lago Buenos Aires.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUCTOS DESTACADOS ===================== -->
+    <section class="seccion seccion--alt" aria-labelledby="titulo-destacados">
+      <div class="seccion__contenedor">
+        <div class="seccion__cabecera seccion__cabecera--centrada">
+          <p class="eyebrow">Los preferidos de la casa</p>
+          <h2 id="titulo-destacados">Productos destacados</h2>
+        </div>
+        <div class="grilla grilla--3">
+          <article class="card-producto" data-aos="fade-up">
+            <div class="card-producto__img">
+              <img src="assets/img/producto-ravioles.svg" alt="Ravioles rellenos de cereza y queso de campo">
+            </div>
+            <div class="card-producto__body">
+              <span class="badge-categoria">Rellenas</span>
+              <h3>Ravioles de cereza y queso</h3>
+              <p>Nuestra receta insignia: masa fina rellena con cereza patagónica y queso de campo.</p>
+              <span class="card-producto__precio">$6.200 / kg</span>
+            </div>
+          </article>
+          <article class="card-producto" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-producto__img">
+              <img src="assets/img/producto-sorrentinos.svg" alt="Sorrentinos rellenos de cordero patagónico">
+            </div>
+            <div class="card-producto__body">
+              <span class="badge-categoria">Rellenas</span>
+              <h3>Sorrentinos de cordero</h3>
+              <p>Relleno de cordero patagónico braseado a fuego lento con hierbas de la zona.</p>
+              <span class="card-producto__precio">$6.800 / kg</span>
+            </div>
+          </article>
+          <article class="card-producto" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-producto__img">
+              <img src="assets/img/producto-salsa-cereza.svg" alt="Salsa de cereza patagónica en frasco">
+            </div>
+            <div class="card-producto__body">
+              <span class="badge-categoria">Salsas</span>
+              <h3>Salsa de cereza patagónica</h3>
+              <p>Agridulce y con cuerpo, pensada para acompañar rellenas y carnes de caza menor.</p>
+              <span class="card-producto__precio">$3.100 / frasco</span>
+            </div>
+          </article>
+        </div>
+        <div class="destacados__cta">
+          <a href="pages/productos.html" class="btn-primario">Ver todo el catálogo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIOS ===================== -->
+    <section class="seccion" aria-labelledby="titulo-testimonios">
+      <div class="seccion__contenedor">
+        <div class="seccion__cabecera seccion__cabecera--centrada">
+          <p class="eyebrow">Lo que dicen los vecinos</p>
+          <h2 id="titulo-testimonios">Testimonios</h2>
+        </div>
+        <div class="grilla grilla--3">
+          <blockquote class="card-testimonio" data-aos="fade-up">
+            <p>"Los ravioles de cereza son un clásico de cada Fiesta de la Cereza en casa. No hay Semana Santa sin pasta de Pastas del Lago."</p>
+            <p class="card-testimonio__autor">Marisa Cárdenas</p>
+            <p class="card-testimonio__rol">Vecina de Los Antiguos</p>
+          </blockquote>
+          <blockquote class="card-testimonio" data-aos="fade-up" data-aos-delay="100">
+            <p>"Pedimos sorrentinos de cordero para el hospedaje todas las semanas. Los huéspedes siempre preguntan la receta."</p>
+            <p class="card-testimonio__autor">Hostería El Mirador del Lago</p>
+            <p class="card-testimonio__rol">Cliente mayorista</p>
+          </blockquote>
+          <blockquote class="card-testimonio" data-aos="fade-up" data-aos-delay="200">
+            <p>"Se nota la diferencia de una pasta amasada a mano. Nosotros ya no compramos pastas secas de supermercado."</p>
+            <p class="card-testimonio__autor">Familia Huenul</p>
+            <p class="card-testimonio__rol">Clientes desde 2015</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer-pastas">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-12 col-md-4">
+          <div class="footer-marca">
+            <img src="assets/img/logo-sello.svg" alt="Logo de Pastas del Lago">
+            <span>Pastas del Lago</span>
+          </div>
+          <p>Fábrica de pastas artesanales en Los Antiguos, Santa Cruz, a orillas del Lago Buenos Aires.</p>
+          <div class="footer-redes">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram de Pastas del Lago">IG</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook de Pastas del Lago">FB</a>
+            <a href="https://wa.me/5492963000000" target="_blank" rel="noopener" aria-label="WhatsApp de Pastas del Lago">WA</a>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pages/nosotros.html">Nosotros</a></li>
+            <li><a href="pages/productos.html">Productos</a></li>
+            <li><a href="pages/galeria.html">Galería</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h4>Horarios</h4>
+          <ul>
+            <li>Lun. a vie.: 9 a 13 y 16 a 20 hs</li>
+            <li>Sábados: 9 a 13 hs</li>
+            <li>Domingos: cerrado</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3">
+          <h4>Fábrica</h4>
+          <ul>
+            <li>Av. 11 de Julio 450, Los Antiguos, Santa Cruz</li>
+            <li>+54 9 2963 40-0000</li>
+            <li>hola@pastasdellago.com.ar</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-linea">
+        <span>© 2026 Pastas del Lago. Todos los derechos reservados.</span>
+        <span>Proyecto final — Coderhouse, Diseño Web</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (bundle con Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

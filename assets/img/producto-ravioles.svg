@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="#FFFBF2"/><ellipse cx="200" cy="165" rx="150" ry="95" fill="#F3E9D2"/><ellipse cx="200" cy="165" rx="150" ry="95" fill="none" stroke="#C9962C" stroke-width="3"/>
+<g>
+<g transform="translate(150,120) rotate(-8)"><rect x="-22" y="-22" width="44" height="44" rx="6" fill="#E9C97A" stroke="#8B1E3F" stroke-width="2"/><circle cx="0" cy="0" r="9" fill="#8B1E3F"/></g>
+<g transform="translate(220,110) rotate(10)"><rect x="-22" y="-22" width="44" height="44" rx="6" fill="#E9C97A" stroke="#8B1E3F" stroke-width="2"/><circle cx="0" cy="0" r="9" fill="#8B1E3F"/></g>
+<g transform="translate(180,175) rotate(4)"><rect x="-22" y="-22" width="44" height="44" rx="6" fill="#E9C97A" stroke="#8B1E3F" stroke-width="2"/><circle cx="0" cy="0" r="9" fill="#8B1E3F"/></g>
+<g transform="translate(255,180) rotate(-12)"><rect x="-22" y="-22" width="44" height="44" rx="6" fill="#E9C97A" stroke="#8B1E3F" stroke-width="2"/><circle cx="0" cy="0" r="9" fill="#8B1E3F"/></g>
+</g>
+<g stroke="#4A7C59" stroke-width="4" fill="none" stroke-linecap="round"><path d="M120 200 Q160 215 200 200"/></g>
+</svg>

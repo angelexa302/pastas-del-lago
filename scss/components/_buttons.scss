@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.btn-primario {
+  @include m.boton(v.$color-cereza, v.$color-crema, v.$color-cereza-clara);
+}
+
+.btn-secundario {
+  @include m.boton(transparent, v.$color-grafito, v.$color-grafito);
+  border: 2px solid v.$color-grafito;
+  padding: 0.75rem 1.8rem;
+
+  &:hover {
+    background-color: v.$color-grafito;
+    color: v.$color-crema !important;
+  }
+}
+
+.btn-lago {
+  @include m.boton(v.$color-lago, v.$color-crema, v.$color-lago-claro);
+}

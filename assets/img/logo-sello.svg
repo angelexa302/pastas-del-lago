@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<circle cx="100" cy="100" r="96" fill="#F3E9D2" stroke="#8B1E3F" stroke-width="4"/>
+<circle cx="100" cy="100" r="82" fill="none" stroke="#8B1E3F" stroke-width="1.5" stroke-dasharray="3 4"/>
+<path d="M100 40 C118 55 130 75 130 98 C130 118 116 132 100 132 C84 132 70 118 70 98 C70 75 82 55 100 40 Z" fill="#8B1E3F"/>
+<path d="M100 55 C110 66 118 80 118 96" stroke="#F3E9D2" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M100 40 L100 26" stroke="#4A7C59" stroke-width="5" stroke-linecap="round"/>
+<path d="M100 30 C108 24 116 24 120 30" stroke="#4A7C59" stroke-width="4" fill="none" stroke-linecap="round"/>
+<text x="100" y="152" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#2B2420" font-weight="700" letter-spacing="1">PASTAS DEL LAGO</text>
+<text x="100" y="167" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#2B2420" letter-spacing="2">LOS ANTIGUOS · STA. CRUZ</text>
+</svg>

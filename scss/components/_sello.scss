@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as v;
+
+// Sello circular: el elemento de marca que se repite en varias páginas
+// (hero, nosotros, productos) como firma visual del proyecto.
+.sello {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 2px dashed v.$color-cereza;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: v.$color-crema;
+  box-shadow: v.$shadow-suave;
+  flex-shrink: 0;
+  animation: sello-girar 40s linear infinite;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  &--flotante {
+    animation: sello-girar 40s linear infinite, sello-flotar 5s ease-in-out infinite;
+  }
+
+  &--sm {
+    width: 84px;
+    height: 84px;
+  }
+}
+
+@keyframes sello-girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes sello-flotar {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -10px; }
+}

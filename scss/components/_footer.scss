@@ -1,0 +1,77 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.footer-pastas {
+  background-color: v.$color-grafito;
+  color: rgba(255, 255, 255, 0.82);
+  padding-block: v.$space-5 v.$space-3;
+  margin-top: v.$space-6;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color v.$dur-normal v.$ease-suave;
+
+    &:hover {
+      color: v.$color-trigo;
+    }
+  }
+
+  h3, h4 {
+    color: v.$color-crema;
+  }
+
+  .footer-marca {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: v.$space-2;
+
+    img { width: 44px; }
+
+    span {
+      font-family: v.$font-display;
+      font-size: 1.15rem;
+      color: v.$color-crema;
+    }
+  }
+
+  .footer-redes {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: v.$space-2;
+
+    a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color v.$dur-normal v.$ease-suave, background-color v.$dur-normal v.$ease-suave, transform v.$dur-normal v.$ease-suave;
+
+      &:hover {
+        background-color: v.$color-cereza;
+        border-color: v.$color-cereza;
+        color: v.$color-crema;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .footer-linea {
+    border-top: 1px solid rgba(255,255,255,0.14);
+    margin-top: v.$space-4;
+    padding-top: v.$space-2;
+    font-size: 0.85rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.2rem;
+    justify-content: space-between;
+  }
+
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+}
