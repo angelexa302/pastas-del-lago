@@ -52,99 +52,74 @@
 
     <section class="seccion">
       <div class="seccion__contenedor">
-        <div class="filtros-productos" role="tablist" aria-label="Filtrar productos por categoría">
-          <button type="button" class="activo" data-filtro="todos">Todos</button>
-          <button type="button" data-filtro="rellenas">Rellenas</button>
-          <button type="button" data-filtro="secas">Secas</button>
-          <button type="button" data-filtro="salsas">Salsas</button>
-        </div>
-
         <div class="grilla grilla--3">
 
-          <div data-item-producto data-aos="fade-up">
-            <article class="card-producto">
-              <div class="card-producto__img">
-                <img src="../assets/img/producto-ravioles.svg" alt="Ravioles rellenos de cereza y queso de campo">
-              </div>
-              <div class="card-producto__body" data-categoria="rellenas">
-                <span class="badge-categoria">Rellenas</span>
-                <h3>Ravioles de cereza y queso</h3>
-                <p>Masa fina rellena con cereza patagónica y queso de campo. Nuestro clásico de temporada.</p>
-                <span class="card-producto__precio">$6.200 / kg</span>
-              </div>
-            </article>
-          </div>
-
-          <div data-item-producto data-aos="fade-up" data-aos-delay="80">
-            <article class="card-producto">
-              <div class="card-producto__img">
-                <img src="../assets/img/producto-sorrentinos.svg" alt="Sorrentinos rellenos de cordero patagónico">
-              </div>
-              <div class="card-producto__body" data-categoria="rellenas">
-                <span class="badge-categoria">Rellenas</span>
-                <h3>Sorrentinos de cordero</h3>
-                <p>Relleno de cordero patagónico braseado a fuego lento con hierbas de la zona.</p>
-                <span class="card-producto__precio">$6.800 / kg</span>
-              </div>
-            </article>
-          </div>
-
-          <div data-item-producto data-aos="fade-up" data-aos-delay="160">
-            <article class="card-producto">
-              <div class="card-producto__img">
-                <img src="../assets/img/producto-noquis.svg" alt="Ñoquis de papa caseros">
-              </div>
-              <div class="card-producto__body" data-categoria="secas">
-                <span class="badge-categoria">Secas</span>
-                <h3>Ñoquis del sábado</h3>
-                <p>Receta tradicional de papa, suaves y esponjosos, listos para cualquier salsa.</p>
-                <span class="card-producto__precio">$3.900 / kg</span>
-              </div>
-            </article>
-          </div>
-
-          <div data-item-producto data-aos="fade-up">
-            <article class="card-producto">
-              <div class="card-producto__img">
-                <img src="../assets/img/producto-tallarines.svg" alt="Tallarines caseros al huevo">
-              </div>
-              <div class="card-producto__body" data-categoria="secas">
-                <span class="badge-categoria">Secas</span>
-                <h3>Tallarines al huevo</h3>
-                <p>Amasados finos, ideales para salsas livianas o con manteca y hierbas patagónicas.</p>
-                <span class="card-producto__precio">$4.100 / kg</span>
-              </div>
-            </article>
-          </div>
-
-          <div data-item-producto data-aos="fade-up" data-aos-delay="80">
-            <article class="card-producto">
-              <div class="card-producto__img">
-                <img src="../assets/img/producto-fideos.svg" alt="Fideos secos artesanales envasados">
-              </div>
-              <div class="card-producto__body" data-categoria="secas">
-                <span class="badge-categoria">Secas</span>
-                <h3>Fideos secos artesanales</h3>
-                <p>Se conservan hasta 6 meses. Ideales para llevar de souvenir o pedidos a distancia.</p>
-                <span class="card-producto__precio">$2.800 / paquete</span>
-              </div>
-            </article>
-          </div>
-
-          <div data-item-producto data-aos="fade-up" data-aos-delay="160">
-            <article class="card-producto">
-              <div class="card-producto__img">
-                <img src="../assets/img/producto-salsa-cereza.svg" alt="Salsa de cereza patagónica en frasco">
-              </div>
-              <div class="card-producto__body" data-categoria="salsas">
-                <span class="badge-categoria">Salsas</span>
-                <h3>Salsa de cereza patagónica</h3>
-                <p>Agridulce y con cuerpo, pensada para acompañar rellenas y carnes de caza menor.</p>
-                <span class="card-producto__precio">$3.100 / frasco</span>
-              </div>
-            </article>
-          </div>
-
+          <article class="card-producto" data-aos="fade-up">
+            <div class="card-producto__img">
+              <img src="../assets/img/producto-ravioles.svg" alt="Ravioles rellenos de cereza y queso de campo">
+            </div>
+            <div class="card-producto__body">
+              <span class="badge-categoria">Rellenas</span>
+              <h3>Ravioles de cereza y queso</h3>
+              <p>Masa fina rellena con cereza patagónica y queso de campo. Nuestro clásico de temporada.</p>
+              <span class="card-producto__precio">$6.200 / kg</span>
+            </div>
+          </article>
+          <article class="card-producto" data-aos="fade-up" data-aos-delay="80">
+            <div class="card-producto__img">
+              <img src="../assets/img/producto-sorrentinos.svg" alt="Sorrentinos rellenos de cordero patagónico">
+            </div>
+            <div class="card-producto__body">
+              <span class="badge-categoria">Rellenas</span>
+              <h3>Sorrentinos de cordero</h3>
+              <p>Relleno de cordero patagónico braseado a fuego lento con hierbas de la zona.</p>
+              <span class="card-producto__precio">$6.800 / kg</span>
+            </div>
+          </article>
+          <article class="card-producto" data-aos="fade-up" data-aos-delay="160">
+            <div class="card-producto__img">
+              <img src="../assets/img/producto-noquis.svg" alt="Ñoquis de papa caseros">
+            </div>
+            <div class="card-producto__body">
+              <span class="badge-categoria">Secas</span>
+              <h3>Ñoquis del sábado</h3>
+              <p>Receta tradicional de papa, suaves y esponjosos, listos para cualquier salsa.</p>
+              <span class="card-producto__precio">$3.900 / kg</span>
+            </div>
+          </article>
+          <article class="card-producto" data-aos="fade-up">
+            <div class="card-producto__img">
+              <img src="../assets/img/producto-tallarines.svg" alt="Tallarines caseros al huevo">
+            </div>
+            <div class="card-producto__body">
+              <span class="badge-categoria">Secas</span>
+              <h3>Tallarines al huevo</h3>
+              <p>Amasados finos, ideales para salsas livianas o con manteca y hierbas patagónicas.</p>
+              <span class="card-producto__precio">$4.100 / kg</span>
+            </div>
+          </article>
+          <article class="card-producto" data-aos="fade-up" data-aos-delay="80">
+            <div class="card-producto__img">
+              <img src="../assets/img/producto-fideos.svg" alt="Fideos secos artesanales envasados">
+            </div>
+            <div class="card-producto__body">
+              <span class="badge-categoria">Secas</span>
+              <h3>Fideos secos artesanales</h3>
+              <p>Se conservan hasta 6 meses. Ideales para llevar de souvenir o pedidos a distancia.</p>
+              <span class="card-producto__precio">$2.800 / paquete</span>
+            </div>
+          </article>
+          <article class="card-producto" data-aos="fade-up" data-aos-delay="160">
+            <div class="card-producto__img">
+              <img src="../assets/img/producto-salsa-cereza.svg" alt="Salsa de cereza patagónica en frasco">
+            </div>
+            <div class="card-producto__body">
+              <span class="badge-categoria">Salsas</span>
+              <h3>Salsa de cereza patagónica</h3>
+              <p>Agridulce y con cuerpo, pensada para acompañar rellenas y carnes de caza menor.</p>
+              <span class="card-producto__precio">$3.100 / frasco</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>

@@ -864,30 +864,6 @@ html, body {
   font-weight: 700;
 }
 
-.filtros-productos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-bottom: 2.5rem;
-}
-.filtros-productos button {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 600;
-  font-size: 0.85rem;
-  padding: 0.55rem 1.2rem;
-  border-radius: 999px;
-  border: 1.5px solid rgba(43, 36, 32, 0.12);
-  background: #FFFBF2;
-  color: #2B2420;
-  cursor: pointer;
-  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.filtros-productos button:hover, .filtros-productos button.activo {
-  background: #8B1E3F;
-  border-color: #8B1E3F;
-  color: #FFFBF2;
-}
-
 .masonry-galeria {
   columns: 1;
   gap: 1rem;

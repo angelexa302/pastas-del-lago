@@ -57,22 +57,19 @@
           <div data-aos="fade-right">
             <h2>Escribinos</h2>
             <p>Completá el formulario y te respondemos a la brevedad para coordinar tu pedido.</p>
-            <form class="form-pastas needs-validation" novalidate>
+            <form class="form-pastas" action="mailto:hola@pastasdellago.com.ar" method="post" enctype="text/plain">
               <div class="row g-3">
                 <div class="col-12 col-md-6">
                   <label for="nombre" class="form-label">Nombre y apellido</label>
                   <input type="text" class="form-control" id="nombre" name="nombre" required>
-                  <div class="invalid-feedback">Contanos tu nombre, por favor.</div>
                 </div>
                 <div class="col-12 col-md-6">
                   <label for="telefono" class="form-label">Teléfono</label>
                   <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="2963 40-0000" required>
-                  <div class="invalid-feedback">Ingresá un teléfono de contacto.</div>
                 </div>
                 <div class="col-12">
                   <label for="email" class="form-label">Correo electrónico</label>
                   <input type="email" class="form-control" id="email" name="email" required>
-                  <div class="invalid-feedback">Ingresá un correo válido.</div>
                 </div>
                 <div class="col-12">
                   <label for="motivo" class="form-label">Motivo de contacto</label>
@@ -82,12 +79,10 @@
                     <option value="mayorista">Consulta mayorista</option>
                     <option value="otro">Otro</option>
                   </select>
-                  <div class="invalid-feedback">Elegí un motivo de contacto.</div>
                 </div>
                 <div class="col-12">
                   <label for="mensaje" class="form-label">Mensaje</label>
                   <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Contanos qué productos te interesan y para cuándo los necesitás" required></textarea>
-                  <div class="invalid-feedback">Contanos brevemente tu pedido.</div>
                 </div>
                 <div class="col-12">
                   <button type="submit" class="btn-primario">Enviar pedido</button>
