@@ -7,6 +7,6 @@
     "sass:watch": "sass scss/main.scss styles/main.css --no-source-map --watch"
   },
   "devDependencies": {
-    "sass": "^1.77.0"
+    "sass": "^1.102.0"
   }
 }
