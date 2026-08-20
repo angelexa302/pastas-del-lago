@@ -1,16 +1,10 @@
-// ==========================================================================
-// MAIN — Este archivo NO contiene código propio, solo importa los partials.
-// ==========================================================================
 
-// Abstracts
 @use 'abstracts/variables';
 @use 'abstracts/mixins';
 
-// Base
 @use 'base/reset';
 @use 'base/typography';
 
-// Componentes
 @use 'components/navbar';
 @use 'components/buttons';
 @use 'components/cards';
@@ -18,15 +12,12 @@
 @use 'components/footer';
 @use 'components/forms';
 
-// Layout
 @use 'layout/hero';
 @use 'layout/secciones';
 
-// Utilidades (animaciones nativas y responsive)
 @use 'utils/animaciones';
 @use 'utils/responsive';
 
-// Estilos particulares de cada página
 @use 'pages/home';
 @use 'pages/nosotros';
 @use 'pages/galeria';

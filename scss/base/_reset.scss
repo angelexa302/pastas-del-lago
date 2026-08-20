@@ -37,7 +37,6 @@ button {
   font-family: inherit;
 }
 
-// Respeta preferencia de movimiento reducido
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;
@@ -47,7 +46,6 @@ button {
   }
 }
 
-// Foco visible y accesible en toda la navegación por teclado
 :focus-visible {
   outline: 3px solid v.$color-trigo;
   outline-offset: 3px;

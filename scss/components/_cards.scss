@@ -1,7 +1,6 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
-// Placeholder base para todas las variantes de tarjeta (uso de @extend)
 %tarjeta-base {
   @include m.tarjeta();
   display: flex;
@@ -66,8 +65,8 @@
   text-align: left;
 
   .card-valor__icono {
-    width: 64px;
-    height: 64px;
+    width: 124px;
+    height: 124px;
     margin-bottom: v.$space-2;
   }
 }

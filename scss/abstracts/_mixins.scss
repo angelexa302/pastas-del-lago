@@ -1,6 +1,6 @@
 @use 'variables' as v;
 
-// Media queries reutilizables (mobile-first)
+// Media queries reutilizables
 @mixin respond($breakpoint) {
   @if $breakpoint == sm {
     @media (min-width: v.$bp-sm) { @content; }
@@ -74,7 +74,7 @@
   padding-inline: $padding;
 }
 
-// Título de sección con eyebrow (etiqueta pequeña arriba)
+// Título de sección
 @mixin titulo-seccion {
   font-family: v.$font-display;
   font-weight: 600;

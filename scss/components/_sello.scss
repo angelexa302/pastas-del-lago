@@ -1,11 +1,9 @@
 @use '../abstracts/variables' as v;
 
-// Sello circular: el elemento de marca que se repite en varias páginas
-// (hero, nosotros, productos) como firma visual del proyecto.
 .sello {
   position: relative;
-  width: 128px;
-  height: 128px;
+  width: 328px;
+  height: 328px;
   border-radius: 50%;
   border: 2px dashed v.$color-cereza;
   display: flex;

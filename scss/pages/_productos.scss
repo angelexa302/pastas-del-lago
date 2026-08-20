@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.filtros-productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: v.$space-4;
+
+  button {
+    font-family: v.$font-utility;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 0.55rem 1.2rem;
+    border-radius: v.$radius-pill;
+    border: 1.5px solid v.$color-borde;
+    background: v.$color-crema;
+    color: v.$color-grafito;
+    cursor: pointer;
+    transition: all v.$dur-normal v.$ease-suave;
+
+    &:hover, &.activo {
+      background: v.$color-cereza;
+      border-color: v.$color-cereza;
+      color: v.$color-crema;
+    }
+  }
+}

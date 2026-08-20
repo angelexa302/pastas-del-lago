@@ -26,7 +26,10 @@
 
   &__img {
     position: relative;
-    border-radius: v.$radius-md;
+    aspect-ratio: 1 / 1;
+    max-width: 480px;
+    margin-inline: auto;
+    border-radius: 50%;
     overflow: hidden;
     box-shadow: v.$shadow-fuerte;
     animation: hero-entrada 1.1s v.$ease-suave both;
@@ -36,6 +39,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 50%;
     }
   }
 
@@ -90,7 +94,6 @@
   }
 }
 
-// Encabezado interno de páginas secundarias (nosotros, productos, etc.)
 .page-header {
   background: linear-gradient(160deg, v.$color-cereza, #6d1731);
   color: v.$color-crema;
