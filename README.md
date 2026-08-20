@@ -2,8 +2,8 @@
 
 Sitio web estático de 5 páginas para **Pastas del Lago**, una fábrica de pastas artesanales ficticia ubicada en **Los Antiguos, Santa Cruz** (Patagonia Argentina), a orillas del Lago Buenos Aires. Proyecto final de la carrera de Diseño Web en Coderhouse.
 
-🔗 **Sitio en producción:** _[completar con el link de Vercel/Netlify luego de desplegar]_
-📂 **Repositorio:** _[completar con el link del repo de GitHub]_
+🔗 **Sitio en producción:** _https://angelexa302.github.io/pastas-del-lago/pages/productos.html_
+📂 **Repositorio:** _https://github.com/angelexa302/pastas-del-lago.git_
 
 ## Sobre el proyecto
 
